@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		33415BD52D49937300F15058 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 33415BD42D49937300F15058 /* Factory */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		33415B992D49916F00F15058 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		33415BA22D49916F00F15058 /* weatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		33415BD22D4991B000F15058 /* Exceptions for "weatherApp" folder in "weatherApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 33415B862D49916D00F15058 /* weatherApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		33415B892D49916D00F15058 /* weatherApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				33415BD22D4991B000F15058 /* Exceptions for "weatherApp" folder in "weatherApp" target */,
+			);
 			path = weatherApp;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33415BD52D49937300F15058 /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +130,7 @@
 			);
 			name = weatherApp;
 			packageProductDependencies = (
+				33415BD42D49937300F15058 /* Factory */,
 			);
 			productName = weatherApp;
 			productReference = 33415B872D49916D00F15058 /* weatherApp.app */;
@@ -195,6 +214,9 @@
 			);
 			mainGroup = 33415B7E2D49916D00F15058;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				33415BD32D49937300F15058 /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 33415B882D49916D00F15058 /* Products */;
 			projectDirPath = "";
@@ -396,6 +418,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = weatherApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -435,6 +459,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = weatherApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -591,6 +617,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		33415BD32D49937300F15058 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		33415BD42D49937300F15058 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33415BD32D49937300F15058 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 33415B7F2D49916D00F15058 /* Project object */;
 }
